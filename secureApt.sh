@@ -6,7 +6,8 @@
 
 if [ "$1" = "" -o "$2" = "" ]; then echo "Usage: secureApt.sh DIST SUITE";exit 1;fi
 
-DATE=`date "+%a, %d %b %Y %H:%M:%S %z"`
+# DATE=`date "+%a, %d %b %Y %H:%M:%S %z"`
+DATE=`date -R -u`
 GPG_PASS='foobar'
 
 HEADER="Origin: Ubuntu
